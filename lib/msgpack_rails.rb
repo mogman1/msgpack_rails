@@ -18,6 +18,7 @@ if defined?(ActiveModel)
 end
 
 if defined?(::Rails)
+  require "rails/engine"
   module MsgpackRails
     class Rails < ::Rails::Engine
       initializer "msgpack_rails" do
